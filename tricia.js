@@ -6,12 +6,12 @@ form.addEventListener("submit", function(e){
     alert("Thanks for contacting me!");
     form.requestFullscreen();// optional:clear form field after submitting 
 });
+//scroll to top button logic
 const scrollBtn = document.getElementById("scrollTopBtn");
-// show or hide the button based on scroll position
 window.addEventListener("scroll", function (){
 if (window.scrollY > 200) {
     scrollBtn.style.display ="block";
-}else{
+} else{
     scrollBtn.style.display ="none";
 }
 });

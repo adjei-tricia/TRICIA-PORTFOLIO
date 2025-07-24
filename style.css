@@ -197,7 +197,10 @@ form button{
     border-radius:5px;
     cursor: pointer;
     display: none;
-    z-index: -1000;
+    z-index: 99;
+    border: none;
+    background-color: #222;
+    color: #fff
 }
 #scrollTopBtn:hover{
     background-color: #f0c040;
