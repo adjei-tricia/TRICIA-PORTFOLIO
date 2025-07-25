@@ -1,24 +1,26 @@
-// select the contact form 
-const form =document.getElementById("contact-form");
-// add submit event listener
-form.addEventListener("submit", function(e){
-    e.preventDefault(); //stop the form  from refreshing the page 
-    alert("Thanks for contacting me!");
-    form.requestFullscreen();// optional:clear form field after submitting 
+// contact form submit alert
+const contactForm = document.getElementById("contact-form");
+
+contactForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+  alert("Thanks for contacting me!");
+  contactForm.reset();
 });
-//scroll to top button logic
+
+ // scroll-to-top button
 const scrollBtn = document.getElementById("scrollTopBtn");
-window.addEventListener("scroll", function (){
-if (window.scrollY > 200) {
-    scrollBtn.style.display ="block";
-} else{
-    scrollBtn.style.display ="none";
-}
+
+scrollBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 });
-//scroll to top smoothly when clicked
-scrollBtn.addEventListener*("click", function() {
-    window.scrollTo({
-        top:0,
-        behavior:"smooth"
-        });
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 200) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
 });

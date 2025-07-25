@@ -153,15 +153,15 @@ body.dark .project-card h3{
     background-color: #e3f2fd;
 }
 #about{
-    background-color: #fff3e0;
+    background-color: #fceed8;
     
 }
 #projects{
-    background-color: #ede7f6;
+    background-color: #eee5fb;
     
 }
 #contact{
-   background-color: #bbdebd;
+   background-color: #fae2ef;
 }
 form{
     display: flex;
@@ -188,20 +188,20 @@ form button{
 form button{
     background-color: #f0c040;
 }
-#scrollTopBtn{
-    position:fixed;
+#scrollTopBtn {
+    position: fixed;
     bottom: 30px;
     right: 30px;
-    padding: 10px 15px;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 10px;
     border-radius:5px;
     cursor: pointer;
     display: none;
-    z-index: 99;
+    z-index: 999;
     border: none;
-    background-color: #222;
-    color: #fff
+    background-color: #444242;
+    color: #fff;
 }
 #scrollTopBtn:hover{
-    background-color: #f0c040;
+    background-color: #d4d2f3;
 }
